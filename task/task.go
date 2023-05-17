@@ -221,7 +221,7 @@ func (f optionFunc) apply(t *Task) {
 	f(t)
 }
 
-// TimeoutOption return a option to set timeout duration for task
+// TimeoutOption return an option to set timeout duration for task
 func TimeoutOption(timeout time.Duration) Option {
 	return optionFunc(func(t *Task) {
 		t.Timeout = timeout
@@ -697,6 +697,7 @@ func (ms *MapSorter) Sort() {
 }
 
 func (ms *MapSorter) Len() int { return len(ms.Keys) }
+
 func (ms *MapSorter) Less(i, j int) bool {
 	if ms.Vals[i].GetNext(context.Background()).IsZero() {
 		return false

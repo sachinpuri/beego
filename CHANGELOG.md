@@ -1,10 +1,30 @@
 # developing
+- [unified gopkg.in/yaml version to v2](https://github.com/beego/beego/pull/5169)
+- [add non-block write log in asynchronous mode](https://github.com/beego/beego/pull/5150)
+- [Fix 5126: support bloom filter cache](https://github.com/beego/beego/pull/5126)
+- [Fix 5117: support write though cache](https://github.com/beego/beego/pull/5117)
+- [add read through for cache module](https://github.com/beego/beego/pull/5116)
+- [add singleflight cache for cache module](https://github.com/beego/beego/pull/5119)
+- [Fix 5129: must set formatter after init the logger](https://github.com/beego/beego/pull/5130)
+- [Fix 5079: only log msg when the channel is not closed](https://github.com/beego/beego/pull/5132)
+- [Fix 4435: Controller SaveToFile remove all temp file](https://github.com/beego/beego/pull/5138)
+- [Fix 5079: Split signalChan into flushChan and closeChan](https://github.com/beego/beego/pull/5139)
+
+# v2.0.7
+- [Upgrade github.com/go-kit/kit, CVE-2022-24450](https://github.com/beego/beego/pull/5121)
+# v2.0.6
+- [fix: revise the body wrapper to handle empty body case](https://github.com/beego/beego/pull/5102)
+
+# v2.0.5
+
+Note: now we force the web admin service serving HTTP only.
+
 - [Fix 4984: random expire cache](https://github.com/beego/beego/pull/4984)
 - [Fix 4907: make admin serve HTTP only](https://github.com/beego/beego/pull/5005)
 - [Feat 4999: add get all tasks function](https://github.com/beego/beego/pull/4999)
 - [Fix 5012: fix some bug, pass []any as any in variadic function](https://github.com/beego/beego/pull/5012)
 - [Fix 5022: Miss assigning listener to graceful Server](https://github.com/beego/beego/pull/5028)
-
+- [Fix 4955: Make commands and Docker compose for ORM unit tests](https://github.com/beego/beego/pull/5031)
 
 # v2.0.4
 

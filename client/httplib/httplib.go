@@ -28,7 +28,6 @@
 //	}
 //	fmt.Println(str)
 //
-//  more docs http://beego.vip/docs/module/httplib.md
 package httplib
 
 import (
@@ -49,7 +48,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/yaml.v2"
+	"gopkg.in/yaml.v3"
 
 	"github.com/beego/beego/v2/core/berror"
 	"github.com/beego/beego/v2/core/logs"
@@ -112,7 +111,7 @@ func Head(url string) *BeegoHTTPRequest {
 	return NewBeegoRequest(url, "HEAD")
 }
 
-// BeegoHTTPRequest provides more useful methods than http.Request for requesting a url.
+// BeegoHTTPRequest provides more useful methods than http.Request for requesting an url.
 type BeegoHTTPRequest struct {
 	url     string
 	req     *http.Request
